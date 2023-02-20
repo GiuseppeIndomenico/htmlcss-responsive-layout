@@ -368,10 +368,15 @@ p a {
 footer {
     background-color: var(--footer);
     color: var(--bg);
+    text-align: center;
 
+}
 
+footer p{
+    margin: 30px 0 50px 0;
+}
 
-
-
-
+footer p a{
+    color: var(--secondary);
+    text-decoration: underline;
 }
