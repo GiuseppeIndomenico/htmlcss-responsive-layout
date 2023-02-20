@@ -39,6 +39,10 @@ a {
     color: var(--bg);
 }
 
+.tx-l{
+    text-align: left;
+}
+
 
 button {
     border: none;
@@ -180,17 +184,6 @@ section {
 
 
 
-/*footer*/
-
-footer {
-    background-color: var(--footer);
-
-
-
-
-
-
-}
 
 nav ul li {
     text-transform: capitalize;
@@ -220,7 +213,7 @@ section img {
 .right {
     background-color: var(--bg);
     color: var(--footer);
-
+    
 }
 
 #arr {
@@ -265,7 +258,44 @@ h2{
     margin: 24px 0;
 }
 
+/*section feature*/
+
+.container h2{
+    color: var(--bg);
+    margin: 24px 0;
+}
+
+.number{
+    font-size: 40px;
+  
+}
+
+.number, .right.big-rad.tx-l h3 {
+    text-align: left;
+    color: var(--secondary);
+    margin-left: 10px;
+}
+
+.right.big-rad.tx-l p{
+    text-align: left;
+    margin-left: 10px;
+}
+
+.right.big-rad.tx-l button{
+    background-color: var(--secondary);
+    color: var(--bg);
+    text-align: left;
+}
+
+
+/*footer*/
+
+footer {
+    background-color: var(--footer);
 
 
 
 
+
+
+}
