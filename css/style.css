@@ -1,29 +1,54 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'PT Sans', sans-serif;
-  
+
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
 
-:root{/* Color styles */
---footer: #333333;
---primary-dark: #0084FD;
---primary-light: #B5DDFF;
---secondary: #9792E4;
---strong: #FDC15F;
---bg: #FFFFFF;
+:root {
+    /* Color styles */
+    --footer: #333333;
+    --primary-dark: #0084FD;
+    --primary-light: #B5DDFF;
+    --secondary: #9792E4;
+    --strong: #FDC15F;
+    --bg: #FFFFFF;
 }
+
+.d-flex {
+    display: flex;
+}
+
+.spb {
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--bg);
+}
+
+
+
+
+
+
 
 /*icons
 
-<i class="fa-solid fa-bullhorn"></i>
 <i class="fa-solid fa-bars"></i>
+<i class="fa-solid fa-bullhorn"></i>
 <i class="fa-solid fa-file-code"></i>
 <i class="fa-solid fa-laptop-code"></i>
 <i class="fa-solid fa-compass-drafting"></i>
@@ -37,25 +62,37 @@ html{
 
 /*header*/
 
-header{
+header {
     background-color: var(--primary-dark);
     color: var(--bg);
-    
+
 }
+
+nav ul li{
+    display: none;
+}
+
+
+.fa-bars{
+    font-size: 24px;
+}
+
+
+
 
 /*main*/
 
-main{
+main {
     border-color: var(--bg);
 
 }
 
-.even{
+.even {
     background-color: var(--secondary);
     color: var(--bg);
 }
 
-.container{
+.container {
     padding: 10px;
 }
 
@@ -63,5 +100,21 @@ main{
 
 /*footer*/
 
-footer{background-color: var(--footer);
-color: var(--bg);}
+footer {
+    background-color: var(--footer);
+
+
+
+
+
+
+}
+
+
+
+
+nav ul li {
+    text-transform: capitalize;
+    padding: 5px;
+    color: var(--bg);
+}
