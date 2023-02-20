@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+  
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+:root{/* Color styles */
+--footer: #333333;
+--primary-dark: #0084FD;
+--primary-light: #B5DDFF;
+--secondary: #9792E4;
+--strong: #FDC15F;
+--bg: #FFFFFF;
+}
+
+/*icons
+
+<i class="fa-solid fa-bullhorn"></i>
+<i class="fa-solid fa-bars"></i>
+<i class="fa-solid fa-file-code"></i>
+<i class="fa-solid fa-laptop-code"></i>
+<i class="fa-solid fa-compass-drafting"></i>
+<i class="fa-solid fa-quote-left"></i>
+<i class="fa-solid fa-quote-right"></i>
+<i class="fa-brands fa-apple"></i>
+<i class="fa-solid fa-arrow-down"></i>
+
+*/
+
