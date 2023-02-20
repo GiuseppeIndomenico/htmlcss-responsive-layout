@@ -40,6 +40,13 @@ a {
 }
 
 
+button {
+    border: none;
+    border-radius: 20px;
+    padding: 5px 40px;
+    margin-bottom: 10px;
+}
+
 
 
 
@@ -48,13 +55,13 @@ a {
 /*icons
 
 <i class="fa-solid fa-bars"></i>
-<i class="fa-solid fa-bullhorn"></i>
+<i class="fa-brands fa-apple"></i>
 <i class="fa-solid fa-file-code"></i>
-<i class="fa-solid fa-laptop-code"></i>
 <i class="fa-solid fa-compass-drafting"></i>
+<i class="fa-solid fa-laptop-code"></i>
+<i class="fa-solid fa-bullhorn"></i>
 <i class="fa-solid fa-quote-left"></i>
 <i class="fa-solid fa-quote-right"></i>
-<i class="fa-brands fa-apple"></i>
 <i class="fa-solid fa-arrow-down"></i>
 
 */
@@ -65,16 +72,23 @@ a {
 header {
     background-color: var(--primary-dark);
     color: var(--bg);
+    position: fixed;
+    top: 0;
+    width: 100%;
 
 }
 
-nav ul li{
+nav ul li {
     display: none;
 }
 
 
-.fa-bars{
+.fa-bars {
     font-size: 24px;
+}
+
+.lil-rad {
+    border-radius: 15px;
 }
 
 
@@ -84,6 +98,7 @@ nav ul li{
 
 main {
     border-color: var(--bg);
+    margin-top: 100px;
 
 }
 
@@ -94,6 +109,57 @@ main {
 
 .container {
     padding: 10px;
+}
+
+
+.card {
+    background-color: var(--primary-light);
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+.card h3 {
+    color: var(--primary-dark);
+    font-size: 24px;
+
+
+}
+
+.card i {
+    color: var(--primary-dark);
+    font-size: 72px;
+    margin-top: 16px;
+
+}
+
+.card p {
+    line-height: 24px;
+}
+
+.card button {
+    font-size: 20px;
+    color: var(--bg);
+    background-color: var(--primary-dark);
+
+}
+
+.card img {
+    width: 100%;
+    display: block;
+}
+
+.card button i {
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    color: var(--bg);
+}
+
+.card p,
+.card i,
+.card h3 {
+    padding: 15px;
 }
 
 
