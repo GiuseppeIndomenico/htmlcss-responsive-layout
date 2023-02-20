@@ -243,6 +243,7 @@ h2{
 .card-part{
     background-color: var(--secondary);
     color: var(--bg);
+    margin: 20px 0;
 }
 
 
@@ -263,6 +264,8 @@ h2{
 .text-part h3{
     margin: 24px 0;
 }
+
+
 
 
 
