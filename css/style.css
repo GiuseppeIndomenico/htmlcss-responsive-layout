@@ -512,6 +512,11 @@ h2 {
         gap: 10px
     }
 
+    .right.big-rad.tx-l{
+        width: calc(100% / 3 - 10px);
+        margin-top: 0;
+    }
+
     nav .drop-content {
         position: static;
     }
