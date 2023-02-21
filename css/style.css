@@ -84,9 +84,38 @@ header {
 
 }
 
-nav ul li {
+nav ul {
     display: none;
+    position: absolute;
+    top: 35px;
+    right:-10px;
+    text-align: center;
+    background-color: var(--primary-dark);
+    border-radius: 10px;
+    padding:5px
 }
+
+li a button{
+    color: var(--footer);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+
+.dropdown{
+    position: relative;
+}
+
+.dropdown:hover ul{
+    display: block;
+}
+
+ul:hover{
+border: 2px inset white;
+}
+
+
 
 
 .fa-bars {
@@ -380,3 +409,5 @@ footer p a{
     color: var(--secondary);
     text-decoration: underline;
 }
+
+
