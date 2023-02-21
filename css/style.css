@@ -85,6 +85,12 @@ header {
 
 }
 
+nav{
+    padding: 10px 10px;
+}
+
+
+
 nav .drop-content {
     display: none;
     position: absolute;
@@ -92,7 +98,6 @@ nav .drop-content {
     right: -10px;
     text-align: center;
     background-color: var(--primary-dark);
-    border-radius: 10px;
     padding: 5px
 }
 
@@ -100,6 +105,7 @@ li a button {
     color: var(--footer);
     font-size: 16px;
     font-weight: bold;
+    margin-bottom: 0;
 }
 
 
@@ -111,12 +117,6 @@ li a button {
 .dropdown:hover .drop-content {
     display: block;
 }
-
-.drop-content:hover{
-    border: 2px inset white;
-}
-
-
 
 
 .fa-bars {
@@ -296,7 +296,7 @@ h2 {
 .container h2 {
     color: var(--bg);
     margin: 24px auto;
-    
+
 }
 
 .number {
@@ -324,7 +324,7 @@ h2 {
 .right.big-rad.tx-l button {
     background-color: var(--secondary);
     color: var(--bg);
-    
+
 
 }
 
@@ -424,9 +424,11 @@ footer p a {
         gap: 10px
     }
 
-    .aic{align-items: center;
-        
+    .aic {
+        align-items: center;
+
     }
+
     .card.lil-rad {
         width: calc(100%/3 - 10px);
     }
@@ -439,11 +441,11 @@ footer p a {
         width: calc(100% / 2 - 10px);
     }
 
-    .img-test{
+    .img-test {
         width: calc(220px - 10px);
     }
 
-    .text-part{
+    .text-part {
         width: calc(100% - 230px);
     }
 
@@ -457,23 +459,58 @@ footer p a {
         width: calc(40% - 10px);
     }
 
-    h1, .number,{
-        font-size: 64px;
+    h1,
+    .number,
+    {
+    font-size: 64px;
+}
+
+.free {
+    font-size: 72px;
+}
+
+#gt .container a button {
+    font-size: 28px;
+    border-radius: 60px;
+
+
+}
+
+#gt .container h1,
+h2 {
+    font-size: 36px;
+}
+
+}
+
+@media screen and (min-width:992px) {
+    .container {
+        max-width: 992px;
+        margin: 0 auto;
     }
 
-    .free{
-        font-size: 72px;
-    }
-
-    #gt .container a button{
-        font-size: 28px;
-        border-radius: 60px;
+    .dropdown i{
+        display: none;
         
-
     }
 
-    #gt .container h1, h2 {
-        font-size: 36px;
+    nav .drop-content{
+        display: block;
     }
+
+    .li-flex{
+        display: flex;
+        align-items: center;
+    }
+
+    nav .drop-content {
+        position: static;
+    }
+
+    .cli-flex{
+        display: flex;
+        align-items: flex-end;
+    }
+
 
 }
