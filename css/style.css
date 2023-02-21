@@ -85,7 +85,7 @@ header {
 
 }
 
-nav{
+nav {
     padding: 10px 10px;
 }
 
@@ -229,6 +229,9 @@ section img {
     width: 100%;
 }
 
+.left img{margin-bottom: 100px;
+}
+
 .left p,
 .left h1,
 .right h3,
@@ -293,7 +296,7 @@ h2 {
 
 /*section feature*/
 
-.container h2 {
+#feature h2 {
     color: var(--bg);
     margin: 24px auto;
 
@@ -485,32 +488,57 @@ h2 {
 
 @media screen and (min-width:992px) {
     .container {
-        max-width: 992px;
+        max-width: 1200px;
         margin: 0 auto;
     }
 
-    .dropdown i{
-        display: none;
-        
+    .container-992 {
+        max-width: 900px;
+        margin: 0 auto;
     }
 
-    nav .drop-content{
+    .dropdown i {
+        display: none;
+
+    }
+
+    nav .drop-content {
         display: block;
     }
 
-    .li-flex{
+    .li-flex {
         display: flex;
         align-items: center;
+        gap: 10px
     }
 
     nav .drop-content {
         position: static;
     }
 
-    .cli-flex{
+    .cli-flex {
         display: flex;
         align-items: flex-end;
+        gap: 10px;
+    }
+
+    .pli-flex {
+        display: flex;
+        align-items: flex-end;
+        gap: 100px
+    }
+
+    .left {
+        width: calc(50% - 100px);
+        align-self: flex-start;
+    }
+
+    .right {
+        width: calc(50% - 100px);
+        padding: 32px;
+        margin-top: 100px;
     }
 
 
 }
+
