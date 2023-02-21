@@ -37,6 +37,11 @@ ul {
 a {
     text-decoration: none;
     color: var(--bg);
+
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .tx-l {
@@ -51,6 +56,8 @@ button {
     margin-bottom: 10px;
     cursor: pointer;
     letter-spacing: 2px;
+    transition: background-color, color .5s;
+
 }
 
 
@@ -91,7 +98,7 @@ nav {
 
 
 
-nav .drop-content {
+nav .content {
     display: none;
     position: absolute;
     top: 35px;
@@ -110,13 +117,22 @@ li a button {
 
 
 
+
+
 .dropdown {
     position: relative;
 }
 
-.dropdown:hover .drop-content {
+.dropdown>button {
+    background-color: var(--primary-dark);
+    padding: 0;
+    color: var(--bg);
+}
+
+.dropdown:hover .content {
     display: block;
 }
+
 
 
 .fa-bars {
@@ -214,7 +230,9 @@ section {
     padding: 15px;
 }
 
-
+.fa-apple {
+    transition: all .25s;
+}
 
 
 nav ul li {
@@ -223,13 +241,25 @@ nav ul li {
     color: var(--bg);
 }
 
+.c-left a button:hover {
+    background-color: var(--bg);
+    color: var(--primary-dark);
+}
+
+.c-left a button:hover i {
+    background-color: var(--bg);
+    color: var(--primary-dark);
+}
+
+
 /*section planning*/
 
 section img {
     width: 100%;
 }
 
-.left img{margin-bottom: 100px;
+.left img {
+    margin-bottom: 100px;
 }
 
 .left p,
@@ -258,6 +288,12 @@ section img {
     width: 50px;
     height: 50px;
     font-size: 18px;
+    transition: .5s;
+}
+
+#arr:hover {
+    background-color: var(--footer);
+    color: var(--secondary);
 }
 
 /*sezione testimonial*/
@@ -327,8 +363,15 @@ h2 {
 .right.big-rad.tx-l button {
     background-color: var(--secondary);
     color: var(--bg);
+    border: 2px solid var(--bg);
 
 
+}
+
+.right.big-rad.tx-l button:hover {
+    border: 2px solid var(--secondary);
+    background-color: var(--bg);
+    color: var(--secondary);
 }
 
 /*section about*/
@@ -366,7 +409,15 @@ h2 {
 .img-test a button {
     background-color: var(--secondary);
     color: var(--bg);
+    border: 2px solid var(--bg);
+    border-radius: 60px;
 
+}
+
+.img-test a button:hover {
+    border: 2px solid var(--secondary);
+    background-color: var(--bg);
+    color: var(--secondary);
 }
 
 /*get started*/
@@ -374,6 +425,11 @@ h2 {
 #gt .container h1 {
     font-size: 30px;
     padding: 20px;
+}
+
+.content ul li a button:hover {
+    background-color: var(--footer);
+    color: var(--bg);
 }
 
 .free {
@@ -393,7 +449,16 @@ h2 {
     padding: 15px 40px;
     border-radius: 25px;
     margin-bottom: 32px;
+    transition: .5s;
+   
 }
+
+#gt .container a button:hover{
+    background-color: var(--strong);
+   
+    color: var(--bg);
+}
+
 
 p a {
     text-decoration: underline;
@@ -502,8 +567,10 @@ h2 {
 
     }
 
-    nav .drop-content {
+    nav .dropdown .content {
         display: block;
+        position: relative;
+        top: -15px
     }
 
     .li-flex {
@@ -512,12 +579,12 @@ h2 {
         gap: 10px
     }
 
-    .right.big-rad.tx-l{
+    .right.big-rad.tx-l {
         width: calc(100% / 3 - 10px);
         margin-top: 0;
     }
 
-    nav .drop-content {
+    nav ul {
         position: static;
     }
 
@@ -546,4 +613,3 @@ h2 {
 
 
 }
-
