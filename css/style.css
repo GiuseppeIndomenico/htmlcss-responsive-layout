@@ -241,6 +241,11 @@ nav ul li {
     color: var(--bg);
 }
 
+.c-right img{
+    max-width: 400px;
+}
+
+
 .c-left a button:hover {
     background-color: var(--bg);
     color: var(--primary-dark);
