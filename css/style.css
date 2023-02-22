@@ -497,6 +497,14 @@ footer p a {
 
     }
 
+    .c-left{
+        width: 60%;
+    }
+
+    .c-right img{
+        max-width: 250px;
+    }
+
     .card.lil-rad {
         width: calc(100%/3 - 10px);
     }
@@ -605,10 +613,18 @@ h2 {
         align-self: flex-start;
     }
 
+    .left img{
+        max-width: 500px;
+    }
+
     .right {
         width: calc(50% - 100px);
         padding: 32px;
         margin-top: 100px;
+    }
+
+    .right img {
+        max-width: 150px;
     }
 
 
